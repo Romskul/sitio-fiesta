@@ -1,5 +1,5 @@
 .body {
-    background-color: azure;
+    background-color: #050505;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,7 @@
 
 .header {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 100px;
@@ -16,27 +17,32 @@
     background-color: #050505;
 }
 
-#logos {
+.logos{
     display: flex;
-    align-items: flex-start ;
-    width: 30%;
-}
-
-#logo_encounter {
-    width: 50%;
+    justify-content: space-around;
+    width: 300px;
     padding-left: 4em;
 }
 
+#logo_encounter {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
 #logo_fund{
-    width: 20%;
-    padding-left: 2em;
-    padding-bottom: 0.5em;
+    width: 90%;
+    padding:0;
+    margin: 0;
+}
+.menu {
+
 }
 
 .nav{
     display: flex;
     justify-content: flex-start;
-    width: 80%;
+    width: 50%;
     padding: 0;
     margin: 0;
 }
@@ -90,7 +96,7 @@ div.div_desplegable p {
 
 div.div_desplegable p:hover{
     background-color: #353535;
-    box-shadow: 0px 5px 20px rgb(114, 157, 218);
+    box-shadow: 0px 0px 5px rgb(114, 157, 218);
 }
 
 div.div_desplegable a {
