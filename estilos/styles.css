@@ -15,35 +15,37 @@
     position: sticky;
     top: 0;
     background-color: #050505;
+    padding-top: 1em;
+}
+
+.header > img {
+    padding-left: 2em;
 }
 
 .logos{
     display: flex;
     justify-content: space-around;
-    width: 300px;
-    padding-left: 4em;
+    width: 400px;
+    padding-left: 12em;
 }
 
 #logo_encounter {
-    width: 80%;
+    width: 85%;
     margin: 0;
     padding: 0;
 }
 
 #logo_fund{
-    width: 90%;
-    padding:0;
+    width: 80%;
+    padding-top: .5em;
     margin: 0;
-}
-.menu {
-
 }
 
 .nav{
     display: flex;
     justify-content: flex-start;
-    width: 50%;
-    padding: 0;
+    width: 35%;
+    padding-left: 4em;
     margin: 0;
 }
 
@@ -85,6 +87,17 @@
     background-color: #101010;
     border-top: solid 2px rgb(98, 170, 228);
     gap: 1px;
+}
+
+.nav li div > div.div_submenu {
+    position: absolute;
+    display: none;
+
+}
+
+nav.nav li.li_desplegable div.div_desplegable > a.submenuDespliega:hover div.div_submenu{
+    display: flex;
+    flex-direction: column;
 }
 
 div.div_desplegable p {  
@@ -142,7 +155,17 @@ nav.nav ul.menu[data-animation="bonus"] li.li_desplegable a.menuLinks:hover::aft
     transform: scaleX(1);
 }
 
+#lenguajes {
+    width: 100px;
+    margin-left: 10em;
+    display: flex;
+    justify-content: space-around;
+}
 
+#lenguajes img {
+    text-decoration: none;
+    width: 50%;
+}
 
 .main {
     display: flex;
