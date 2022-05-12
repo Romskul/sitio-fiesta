@@ -77,6 +77,7 @@
                 <a href="" title="Página en Inglés"><img src="imagenes/Bandera-de-Reino-Unido.png" alt="" ></a>
             </div>
         </header>
+        <img src="imagenes/abstract-lowpoly-vector-network-connections-from-particles-and-linesweb-background-rqzfnpimzysqlt.jpg" alt="" class="background">
         <main class="main">
             <section>
                 <div id="imgLanParty">
@@ -89,7 +90,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="section_texto">
                 <div class="wrapper_inicio">
                     <h2 class="inicio_titulo">¿Qué es la Euskal Encounter?</h2>
                     <div class="wrapper_texto">
@@ -100,11 +101,11 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="section_texto2">
                 <div class="wrapper_inicio">
-                    <h2 class="inicio_titulo">Opengune</h2>
+                    <h2 class="inicio_titulo2">Opengune</h2>
                     <div class="wrapper_texto">
-                        <p class="texto_inicio">
+                        <p class="texto_inicio2">
                             Zona abierta tanto para los asistentes a la party como al público general. Empresas del sector informático presentarán sus productos en esta área. Además se ofrecerá, de forma gratuita, conferencias y muestras sobre temas de actualidad informática y talleres para acercar la tecnología a todas las personas interesadas.
                         </p>
                     </div>
@@ -133,6 +134,21 @@
         </footer>  
 		<script>
             
+            let titulo1 = document.querySelector("h2.inicio_titulo");
+            let texto1 = document.querySelector("p.texto_inicio");
+
+            window.addEventListener("scroll", aparicionTextos);
+
+            function aparicionTextos(event){
+                if(scrollY >= 110 && !titulo1.classList.contains("tituloUp")){
+                    titulo1.classList.add("tituloUp");
+                    texto1.classList.add("texto1Up");
+                }else if(scrollY >= 150 && !texto1.classList.contains(texto1Up)){
+                    texto1.classList.add("texto1Up");
+                }
+            }
+
+
 		</script>
 	</body>
 </html>
