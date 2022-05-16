@@ -5,6 +5,7 @@
 		<title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
+        <meta name="description" content="Información general sobre la Euskal Encounter 2022">
         <link rel="stylesheet" href="estilos/styles.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://kit.fontawesome.com/873c6f622e.js" crossorigin="anonymous"></script>
@@ -74,7 +75,7 @@
             <a href="https://encounter.eus/es/"><img src="imagenes/euskaltel_encounter.png" alt=""></a>
             <div id="lenguajes">
                 <a href="" title="Página en Euskera"><img src="imagenes/ikurrina.png" alt=""></a>
-                <a href="" title="Página en Inglés"><img src="imagenes/Bandera-de-Reino-Unido.png" alt="" ></a>
+                <a href="" title="Página en Inglés"><img src="imagenes/Bandera-de-Reino-Unido.png" alt=""></a>
             </div>
         </header>
         <img src="imagenes/abstract-lowpoly-vector-network-connections-from-particles-and-linesweb-background-rqzfnpimzysqlt.jpg" alt="" class="background">
@@ -90,6 +91,62 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <div id="RRSS">
+                    <span id="grupo_twitter" class='fa-stack fa-lg '>
+                        <a href="">
+                            <i id="circulo" class='fas fa-circle fa-stack-1x'></i>
+                            <i id="twitter" class='fab fa-twitter fa-stack-1x'></i>
+                        </a>
+                    </span>
+                    <span id="grupo_face" class='fa-stack fa-lg'>
+                        <a href="">
+                            <i id="circulo"  class='fas fa-circle fa-stack-1x'></i>
+                            <i id="facebook" class='fab fa-facebook-f fa-stack-1x'></i>
+                        </a>
+                    </span>
+                    <div class="youtubeg">
+                        <a href="">
+                        <i id="youtube" class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    <span id="inst">
+                        <a href="">
+                            <i id="instagram" class="fa-brands fa-instagram-square "></i>
+                        </a>
+                    </span>   
+                    <span id="twitch">
+                        <a href="">
+                            <i class="fa-brands fa-twitch"></i>
+                        </a>
+                    </span>
+                    <span id="flickr">
+                        <a href="">
+                            <i class="fa-brands fa-flickr "></i>
+                        </a>
+                    </span>
+                </div>
+            </section>
+            <script>
+                /*/////////////// escript de youtube dando vueltas //////////////////////*/
+                            let youtubeIcon = document.querySelector("i.fa-youtube");
+                            youtubeIcon.addEventListener("mouseover",gira);
+                            youtubeIcon.addEventListener("mouseout",nogira);
+                            function gira(){
+                                if (!youtubeIcon.classList.contains("fa-flip")){
+                                    youtubeIcon.classList.add("fa-flip");
+                                    youtubeIcon.style.animationIterationCount = 1;
+                                    youtubeIcon.style.animationDuration="1.5s";
+                                }
+                            }
+                
+                            function nogira(){
+                                if (youtubeIcon.classList.contains("fa-flip")){
+                                    youtubeIcon.classList.remove("fa-flip");
+                                }
+                            }
+                
+                        </script>
             <section class="section_texto">
                 <div class="wrapper_inicio">
                     <h2 class="inicio_titulo">¿Qué es la Euskal Encounter?</h2>
@@ -113,9 +170,7 @@
             </section>
             <section>
                 <div id="pre_footer">
-                    <div id="RRSS">
-                        
-                    </div>
+                    
                     <div id="preFooterLinksWrapper">
                         <a href="" class="preFooterLinks">MAPA WEB</a>
                         <a href="" class="preFooterLinks">CONTACTO</a>
@@ -147,8 +202,6 @@
                     texto1.classList.add("texto1Up");
                 }
             }
-
-
 		</script>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 .body {
-    background: linear-gradient(180deg, rgb(5, 5, 90), black);
+    background: linear-gradient(180deg, rgb(4, 7, 12), black);
    
     display: flex;
     flex-direction: column;
@@ -224,7 +224,7 @@ header.header a.login:hover {
 
 .background{
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: 100px;
     z-index: -1;
 }
@@ -244,7 +244,7 @@ header.header a.login:hover {
     position: relative;
 }
 #imgLanParty img {
-    width: 75%;
+    width: 75vw;
 }
 #wrapperLinkFechas {
     position: absolute;
@@ -262,7 +262,7 @@ header.header a.login:hover {
     z-index: 1;
     cursor: pointer;
     top: 45%;
-    left: 20%;
+    left: 10%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -323,8 +323,8 @@ header.header a.login:hover {
     background: rgb(228, 160, 79);
     height: 2em;
     width: 23em;
-    bottom: .25em;
-    right: 13%; 
+    bottom: 3%;
+    right: 5%; 
     border-radius: 3px;
 }
 
@@ -368,7 +368,7 @@ header.header a.login:hover {
 .section_texto {
     display: flex;
     justify-content: center;
-    padding-top: 4em;
+    padding-top: 7em;
     position: relative;
 }
 
@@ -382,7 +382,7 @@ header.header a.login:hover {
 .wrapper_inicio {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 60vw;
     height: 25vh;
     background-color: rgba(245, 245, 220, 0.7);
 }
@@ -410,9 +410,9 @@ header.header a.login:hover {
     font-family: sans-serif;
     font-size: 1.15em;
     position: absolute;
-    bottom: -4em;
+    bottom: -7em;
     opacity: 0;
-    transition: 0.65s;
+    transition: 1s;
     padding-left: 1em;
 }
 
@@ -423,11 +423,11 @@ header.header a.login:hover {
 
 h2.tituloUp {
     opacity: 1;
-    transform: translateY(-3.4em);
+    transform: translateY(-5.4em);
 }
 p.texto1Up{
     opacity: 1;
-    transform: translateY(-4.4em);
+    transform: translateY(-10.4em);
 }
 /*/////////////////////////// FIN TEXTOS INFORMATIVOS //////////////////////*/
 
@@ -435,5 +435,136 @@ p.texto1Up{
 
 /*//////////////////////////// RRSS ////////////////////////////////////*/
 
+#RRSS {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    background-color: rgba(245, 245, 220, 0.568);
+    padding-right: 4em;
+    padding-left: 1em;
+}
+
+       /*--------- TWITTER -----------*/
+
+#grupo_twitter{
+    color: black;
+    transition: 2s;
+    font-size:4em;
+}
+#grupo_twitter a:hover {
+    color: rgb(27, 169, 219);
+    transition: 1s;
+}
+#grupo_twitter a {
+    text-decoration: none;
+    color: #050505;  
+}
+#twitter{
+    color: white;
+    transition: transform .7s ease-in-out;
+    font-size: .7em;
+}
+#twitter:hover{
+    transform: rotate(360deg);
+}
+
+        /*--------- FACEBOOK -----------*/
+
+#grupo_face{
+    color: black;
+    transition: 2s;
+    font-size:4em;
+    margin-left: -0.5em;
+}
+#grupo_face a{
+    text-decoration: none;
+    color: #050505;  
+}
+#facebook{
+    color: white;
+    transition: transform .7s ease-in-out;
+    font-size: .7em;
+}
+#facebook:hover{
+    transform: rotate(360deg);
+}
+#grupo_face a:hover {
+    color: rgb(24, 119, 239);
+    transition: 1s ;
+}
+
+        /*--------- YOUTUBE -----------*/
+.youtubeg{
+    margin-right: 1em;
+}        
+.youtubeg a{
+    text-decoration: none;
+    color: #050505;
+}
+
+.fa-youtube{
+    font-size:4em;
+    transition: 2s;
+}
+.fa-youtube:hover{
+    
+    color: red;
+}
+
+        /*--------- INSTAGRAM -----------*/
+#inst {
+    margin: 0 1em;
+}
+#inst a {
+    text-decoration: none;
+    color: #050505;
+}
+
+.fa-instagram-square {
+    font-size:4em;
+    background: black;
+    background-clip: text;
+        -webkit-background-clip: text;	
+}
+.fa-instagram-square:hover{
+    transition: 1s ease-in-out;
+        color: transparent;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;	
+}
+
+        /*--------- TWITCH -----------*/
+#twitch a{
+    text-decoration: none;
+    color: #050505;
+}
+.fa-twitch{
+    margin: 0 0.35em;
+    font-size:3.5em;
+    transition: 1s;
+}
+.fa-twitch:hover{
+    color: #6441A4;
+    text-shadow:0px 0px 4px #062131;
+}
+
+        /*--------- FLICKR -----------*/
+#flickr a{
+    text-decoration: none;
+    color: #050505;
+}
+.fa-flickr{
+    margin-left: 0.25em;
+    font-size:3.75em;
+    transition: 2s;
+}
+.fa-flickr:hover{
+    transition: 1s;
+    color: blue;
+}
 
 /*/////////////////////////// FIN RRSS /////////////////////////////////*/
