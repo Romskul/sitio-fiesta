@@ -94,34 +94,34 @@
             <section>
                 <div id="RRSS">
                     <span id="grupo_twitter" class='fa-stack fa-lg '>
-                        <a href="https://twitter.com/euskalencounter">
+                        <a href="https://twitter.com/euskalencounter" title="Twitter">
                             <i id="circulo" class='fas fa-circle fa-stack-1x'></i>
                             <i id="twitter" class='fab fa-twitter fa-stack-1x'></i>
                         </a>
                     </span>
                     <span id="grupo_face" class='fa-stack fa-lg'>
-                        <a href="https://www.facebook.com/euskalencounter">
+                        <a href="https://www.facebook.com/euskalencounter" title="Facebook">
                             <i id="circulo"  class='fas fa-circle fa-stack-1x'></i>
                             <i id="facebook" class='fab fa-facebook-f fa-stack-1x'></i>
                         </a>
                     </span>
                     <div class="youtubeg">
-                        <a href="https://www.youtube.com/user/ekcounter">
+                        <a href="https://www.youtube.com/user/ekcounter" title="Youtube">
                         <i id="youtube" class="fa-brands fa-youtube"></i>
                         </a>
                     </div>
                     <span id="inst">
                         <a href="https://www.instagram.com/euskalencounter/">
-                            <i id="instagram" class="fa-brands fa-instagram-square "></i>
+                            <i id="instagram" class="fa-brands fa-instagram-square" title="Instagram"></i>
                         </a>
                     </span>   
                     <span id="twitch">
-                        <a href="https://www.twitch.tv/euskalencounter">
+                        <a href="https://www.twitch.tv/euskalencounter" title="Twitch">
                             <i class="fa-brands fa-twitch"></i>
                         </a>
                     </span>
                     <span id="flickr">
-                        <a href="https://www.flickr.com/photos/euskalencounter">
+                        <a href="https://www.flickr.com/photos/euskalencounter" title="Flickr">
                             <i class="fa-brands fa-flickr "></i>
                         </a>
                     </span>
@@ -150,56 +150,57 @@
             <section class="section_texto">
                 <div class="wrapper_inicio">
                     <h2 class="inicio_titulo">¿Qué es la Euskal Encounter?</h2>
-                    <div class="wrapper_texto">
-                        <p class="texto_inicio">
-                            La Euskal Encounter es una reunión multitudinaria de aficionados y profesionales de la informática que buscan intercambiar conocimientos y realizar durante varios días todo tipo de actividades relacionadas con la informática.
-                            Constituye parte de un fenómeno que tuvo su origen a finales de la década de los ochenta en el norte de Europa, en países tales como Noruega, Dinamarca o Alemania. En el 2022 la party más veterana del estado alcanzará su trigésima edición.
-                        </p>
-                    </div>
+                    <p class="texto_inicio">
+                        La Euskal Encounter es una reunión multitudinaria de aficionados y profesionales de la informática que buscan intercambiar conocimientos y realizar durante varios días todo tipo de actividades relacionadas con la informática.
+                        Constituye parte de un fenómeno que tuvo su origen a finales de la década de los ochenta en el norte de Europa, en países tales como Noruega, Dinamarca o Alemania. En el 2022 la party más veterana del estado alcanzará su trigésima edición.
+                    </p>
                 </div>
             </section>
             <section class="section_texto2">
-                <div class="wrapper_inicio">
+                <div class="wrapper_inicio2">
                     <h2 class="inicio_titulo2">Opengune</h2>
-                    <div class="wrapper_texto">
-                        <p class="texto_inicio2">
-                            Zona abierta tanto para los asistentes a la party como al público general. Empresas del sector informático presentarán sus productos en esta área. Además se ofrecerá, de forma gratuita, conferencias y muestras sobre temas de actualidad informática y talleres para acercar la tecnología a todas las personas interesadas.
-                        </p>
-                    </div>
+                    <p class="texto_inicio2">
+                        Zona abierta tanto para los asistentes a la party como al público general. Empresas del sector informático presentarán sus productos en esta área. Además se ofrecerá, de forma gratuita, conferencias y muestras sobre temas de actualidad informática y talleres para acercar la tecnología a todas las personas interesadas.
+                    </p>
                 </div>
             </section>
-            <section>
-                <div id="pre_footer">
-                    
-                    <div id="preFooterLinksWrapper">
-                        <a href="" class="preFooterLinks">MAPA WEB</a>
-                        <a href="" class="preFooterLinks">CONTACTO</a>
-                        <a href="" class="preFooterLinks">QUIENES SOMOS</a>
-                        <a href="" class="preFooterLinks">AVISO LEGAL</a>
-                    </div>
-                </div>
-            </section>
+            
+            <div id="preFooterLinksWrapper">
+                <a href="" class="preFooterLinks">MAPA WEB</a>
+                <a href="" class="preFooterLinks">CONTACTO</a>
+                <a href="" class="preFooterLinks">QUIENES SOMOS</a>
+                <a href="" class="preFooterLinks">AVISO LEGAL</a>
+            </div>
+            
         </main>
         <footer class="footer">
             <p class="texto_footer">Patrocinadores:</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="imagenes/EG-cas.png" alt="">
+            <img src="imagenes/logo_spri_dto.png" alt="">
+            <img src="imagenes/logo_euskaltel.png" alt="">
+            
         </footer>  
 		<script>
             
             let titulo1 = document.querySelector("h2.inicio_titulo");
             let texto1 = document.querySelector("p.texto_inicio");
+            let wrapper1 = document.querySelector("div.wrapper_inicio");
+            let titulo2 = document.querySelector("h2.inicio_titulo2");
+            let texto2 = document.querySelector("p.texto_inicio2");
+            let wrapper2 = document.querySelector("div.wrapper_inicio2");
+            
 
             window.addEventListener("scroll", aparicionTextos);
 
             function aparicionTextos(event){
-                if(scrollY >= 110 && !titulo1.classList.contains("tituloUp")){
+                if(scrollY >= 250 && !titulo1.classList.contains("tituloUp")){
                     titulo1.classList.add("tituloUp");
                     texto1.classList.add("texto1Up");
-                }else if(scrollY >= 150 && !texto1.classList.contains(texto1Up)){
-                    texto1.classList.add("texto1Up");
+                    wrapper1.classList.add("wrapperUp")
+                }else if(scrollY >= 450 && !texto2.classList.contains("texto1Up")){
+                    titulo2.classList.add("tituloUp");
+                    texto2.classList.add("texto1Up");
+                    wrapper2.classList.add("wrapperUp")
                 }
             }
 		</script>
