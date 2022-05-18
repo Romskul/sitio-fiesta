@@ -63,7 +63,7 @@
 
 /*////////////////////////////////////////////////NAVEGADOR////////////////////////////////////////////*/
 .navWrapper{
-    width: 38%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,6 +105,7 @@
     font-size: .85rem;
     font-family: 'robotoregular';
     transition: 0.25s;
+    width: fit-content;
 }
 
 .nav a:hover {
@@ -125,8 +126,8 @@ nav.nav li.li_desplegable div.div_desplegable div.subMenu div.div_submenu {
     position: absolute;
     display: none;
     width: 15em;
-    left: 180px;
-    top: 127px;
+    left: 168px;
+    top: 137px;
     background-color: #101010;
     border-top: solid 2px rgb(98, 170, 228);
 }
@@ -181,7 +182,7 @@ li.li_desplegable:hover div.div_desplegable div.subMenu:hover div.div_submenu{
     flex-direction: column;
 }
 
-nav.nav ul.menu li.li_desplegable  a.menuLinks::after {
+nav.nav ul.menu a.menuLinks::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -195,16 +196,29 @@ nav.nav ul.menu li.li_desplegable  a.menuLinks::after {
     transition: transform 0.35s ease-in-out;
 }
 
-nav.nav ul.menu[data-animation="bonus"] li.li_desplegable a.menuLinks::after {
+nav.nav ul.menu[data-animation="bonus"] a.menuLinks::after {
     transform-origin: right;
 }
 
-nav.nav ul.menu[data-animation="bonus"] li.li_desplegable a.menuLinks:hover::after {
+nav.nav ul.menu[data-animation="bonus"] a.menuLinks:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
 
-/*///////////////////////////////////////// NAVEGADOR ////////////////////////////////////////////////*/
+.nav a.active_page {
+    color:rgb(114, 191, 221);
+}
+
+.nav a.active_page::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:rgb(233, 84, 13);
+}
+/*///////////////////////////////////////// FIN NAVEGADOR ////////////////////////////////////////////////*/
 
 header.header a.login {
     margin-right: 5em;
@@ -228,7 +242,7 @@ header.header a.login:hover {
 
 #lenguajes {
     width: 7em;
-    margin-left: 4rem;
+    margin-left: 2em;
     display: flex;
     justify-content: space-around;
 }
@@ -250,6 +264,88 @@ header.header a.login:hover {
     flex-direction: column;
     align-items: center;
     width: 100vw;
+}
+
+#aside_links {
+    width: 25%;
+    background-color: rgba(255, 255, 246, 0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 3em 3em;
+}
+
+#aside_links a{
+    text-decoration: none;
+    color: #050505;
+    margin-top: 0.85em;
+    font-family: 'robotoregular';
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+}
+
+#aside_links a:hover {
+    color: rgb(67, 116, 183);
+}
+
+#aside_links a.active_subpage {
+    color: rgb(67, 116, 183);
+}
+
+#aside_links a.active_subpage::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:rgb(233, 84, 13);
+}
+
+#aside_links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:rgb(233, 84, 13);
+    z-index: 100;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease-in-out;
+}
+
+#aside_links a::after {
+    transform-origin: right;
+}
+
+#aside_links a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.wrapper_texto_secun{
+    width: 75%;
+    background-color: rgba(255, 255, 246, 0.8);
+    padding: 1,5em;
+}
+
+.titulo_secun {
+    font-size: 2em;
+    margin-top: 1.5em;
+    font-family: 'latoregular';
+}
+
+.subtitulo_secun {
+    font-size: 1.35em;
+    font-family: 'latoregular';
+    text-decoration: underline;
+    padding-top: 3em;
+}
+
+.parrafo_secun {
+    font-family: 'robotoregular';
 }
 
 /*///////////////////////////////// RRSS /////////////////////////////////*/
@@ -468,7 +564,7 @@ div#preFooterLinksWrapper a:hover::after {
 
 /*····························· FIN ESTILOS COMUNES ··························*/
 
-
+/*----------------------------- INDEX.HTML ----------------------------------*/
 
 /*///////////////////////////////// FOTO PORTADA /////////////////////////////*/
 #imgLanParty {
@@ -658,3 +754,78 @@ div.wrapperUp{
 }
 
 /*/////////////////////////// FIN TEXTOS INFORMATIVOS //////////////////////*/
+
+/*----------------------------- FIN INDEX.HTML ----------------------------------*/
+
+/*----------------------------- ASISTE.HTML ----------------------------------*/
+
+#section_asiste{
+    display: flex;
+    width: 80%;
+    margin-top: 3em;
+    position: relative;
+}
+
+.texto_secun ul li a{
+    text-decoration: none;
+    font-family: 'robotoregular';
+    color: rgb(233, 84, 13);
+}
+
+.texto_secun ul li a:hover{
+    color: rgb(67, 116, 183);
+}
+
+.parrafo_secun a {
+    text-decoration: none;
+    color: rgb(233, 84, 13);
+}
+
+.parrafo_secun a:hover {
+    color: rgb(67, 116, 183);
+    text-decoration: underline;
+}
+
+.table{
+    width: 20em;
+}
+
+.table .row .celda{
+    text-align: left;
+    border: solid 1px black;
+    padding:.65em 0.35em;
+    font-weight: normal;
+}
+
+.table .row th.hora {
+    text-align: center;
+}
+
+.table .row th.dia {
+    font-weight: bold;
+}
+
+#cuando {
+    position: absolute;
+    top: 11em;
+}
+
+#donde {
+    position: absolute;
+    top: 20em;
+}
+
+#como {
+    position: absolute;
+    top: 35.5em;
+}
+
+#acreditacion {
+    position: absolute;
+    top: 51.5em;
+}
+
+#info {
+    position: absolute;
+    top: 80em;
+}
