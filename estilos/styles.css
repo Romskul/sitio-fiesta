@@ -278,52 +278,28 @@ header.header a.login:hover {
     text-decoration: none;
     color: #050505;
     margin-top: 0.85em;
-    font-family: 'robotoregular';
-    font-weight: bold;
-    position: relative;
-    width: fit-content;
+    
 }
 
-#aside_links a:hover {
-    color: rgb(67, 116, 183);
+#aside_links button{
+    padding: 0.5em;
+    border-radius: 8px;
+    font-family: 'robotoregular';
+    font-weight: bold;
+    color: white;
+    background-color: rgb(67, 116, 183);;
+}
+
+#aside_links button:hover {
+    color: azure;
+    background-color: rgb(233, 84, 13);
+    cursor: pointer;
 }
 
 #aside_links a.active_subpage {
     color: rgb(67, 116, 183);
 }
 
-#aside_links a.active_subpage::before {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background:rgb(233, 84, 13);
-}
-
-#aside_links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background:rgb(233, 84, 13);
-    z-index: 100;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.35s ease-in-out;
-}
-
-#aside_links a::after {
-    transform-origin: right;
-}
-
-#aside_links a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
 
 .wrapper_texto_secun{
     width: 75%;
@@ -761,11 +737,22 @@ div.wrapperUp{
 
 #section_asiste{
     display: flex;
+    flex-direction: column;
     width: 80%;
     margin-top: 3em;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
+section#section_asiste img{
+    width: 75vw;
+    margin-bottom: 4em;
+} 
+section#section_asiste article {
+    display: flex;
+    width: 100%;
+}
 .texto_secun ul li a{
     text-decoration: none;
     font-family: 'robotoregular';
