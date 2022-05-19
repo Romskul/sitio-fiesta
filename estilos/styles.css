@@ -266,6 +266,20 @@ header.header a.login:hover {
     width: 100vw;
 }
 
+#titulo_pagina {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgba(255, 255, 246, 0.65);
+    border-bottom: ridge 4px rgb(233, 84, 13);
+    margin-bottom: 1.5em;
+}
+
+#titulo_pagina h1 {
+    font-family: 'robotoregular';
+    padding-left: 2em;
+}
+
 #aside_links {
     width: 25%;
     background-color: rgba(255, 255, 246, 0.8);
@@ -308,9 +322,10 @@ header.header a.login:hover {
 }
 
 .titulo_secun {
-    font-size: 2em;
-    margin-top: 1.5em;
+    font-size: 1.5em;
+    padding: 1.5em 0;
     font-family: 'latoregular';
+    text-decoration: underline;
 }
 
 .subtitulo_secun {
@@ -739,15 +754,17 @@ div.wrapperUp{
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-top: 3em;
+    margin-top: 2.5em;
     position: relative;
     justify-content: center;
     align-items: center;
 }
 
 section#section_asiste img{
-    width: 75vw;
+    width: 50%;
     margin-bottom: 4em;
+    border-bottom-right-radius: 15%;
+    border-top-l-radius: 15%;
 } 
 section#section_asiste article {
     display: flex;
