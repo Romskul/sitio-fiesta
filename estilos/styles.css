@@ -283,9 +283,12 @@ header.header a.login:hover {
 #aside_links {
     width: 25%;
     background-color: rgba(255, 255, 246, 0.8);
+    padding: 3em 0 3em 3em;
+}
+
+#aside_links div#linksWrapper {
     display: flex;
     flex-direction: column;
-    padding: 3em 0 3em 3em;
 }
 
 #aside_links a{
@@ -766,9 +769,10 @@ section#section_asiste img{
     border-bottom-right-radius: 15%;
     border-top-l-radius: 15%;
 } 
-section#section_asiste article {
+section#section_asiste article.article {
     display: flex;
     width: 100%;
+    /* height: 0; */
 }
 .texto_secun ul li a{
     text-decoration: none;

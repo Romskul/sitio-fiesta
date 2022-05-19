@@ -83,13 +83,15 @@
         <main class="main">
             <section id="section_asiste">
                 <img src="../../imagenes/woman-touching-smart-technology-holographic-interface_53876-98409.png" alt="Asistir a la Euskal Encounter">
-                <article>
+                <article class="article">
                     <div id="aside_links" data-animation="bonus">
-                        <a href=""><button>ASISTIR</button></a>
-                        <a href=""><button>INFO ASISTENTES</button></a>
-                        <a href=""><button>INSCRÍBETE</button></a>
-                        <a href=""><button>QUÉ TRAER</button></a>
-                        <a href=""><button>NORMAS GENERALES</button></a>
+                        <div id="linksWrapper">
+                            <a href=""><button>ASISTIR</button></a>
+                            <a href=""><button>INFO ASISTENTES</button></a>
+                            <a href=""><button>INSCRÍBETE</button></a>
+                            <a href=""><button>QUÉ TRAER</button></a>
+                            <a href=""><button>NORMAS GENERALES</button></a>
+                        </div>
                     </div>
                     <div class="wrapper_texto_secun">
                         <h2 class="titulo_secun" id="tituloSecun">Toda la información necesaria para asistir a la Euskal Encounter</h2>
@@ -186,7 +188,10 @@
             
         </footer>  
 		<script>
-            
+            let wrapperTexto = document.querySelector("article.article");
+            let subtitulo = document.querySelector("h2#tituloSecun");
+            let wrapperLinks = document.querySelector("div#linksWrapper");
+
             
 		</script>
 	</body>
