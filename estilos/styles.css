@@ -289,6 +289,8 @@ header.header a.login:hover {
 #aside_links div#linksWrapper {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 120px;
 }
 
 #aside_links a{
@@ -313,8 +315,8 @@ header.header a.login:hover {
     cursor: pointer;
 }
 
-#aside_links a.active_subpage {
-    color: rgb(67, 116, 183);
+#aside_links button.active_subpage {
+    background-color: rgb(233, 84, 13);
 }
 
 
@@ -554,6 +556,22 @@ div#preFooterLinksWrapper a:hover::after {
     padding-left: 3em;
 }
 
+#volver_arriba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 2.5em;
+    height: 2.5em;
+    border: ridge 2px rgb(233, 84, 13);
+    background-color: rgb(67, 116, 183);
+}
+
+#volver_arriba span{
+    color: white;
+}
 /*/////////////////////////////////FIN FOOTER ///////////////////////////////*/
 
 /*····························· FIN ESTILOS COMUNES ··························*/
@@ -815,25 +833,25 @@ section#section_asiste article.article {
 
 #cuando {
     position: absolute;
-    top: 11em;
+    top: 42em;
 }
 
 #donde {
     position: absolute;
-    top: 20em;
+    top: 51.5em;
 }
 
 #como {
     position: absolute;
-    top: 35.5em;
+    top: 66.5em;
 }
 
 #acreditacion {
     position: absolute;
-    top: 51.5em;
+    top: 83em;
 }
 
 #info {
     position: absolute;
-    top: 80em;
+    top: 95em;
 }
