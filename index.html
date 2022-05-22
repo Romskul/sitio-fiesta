@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Page Title</title>
+		<title>Inicio - Euskal Encounter</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
         <meta name="description" content="Información general sobre la Euskal Encounter 2022">
@@ -20,33 +20,33 @@
                 <p class="headertitulo"><em>"Encuentro de profesionales y aficionados a la informática en Euskadi"</em></p>
                 <nav class="nav">
                     <ul class="menu" data-animation="bonus">
+                        <a class="menuLinks active_page" href="">INICIO</a>
                         <li class="li_desplegable">
                             <a class="menuLinks" href="paginas/asistir/asistir.html">ASISTIR</a>
                             <div class="div_desplegable">
-                                <p class="pLinks"><a class="menuLinks" href="#">INFO ASISTENTES</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">INSCRÍBETE</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">QUÉ TRAER</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">NORMAS GENERALES DE PARTICIPACIÓN</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/asistir/inscribete.html">INSCRÍBETE</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/asistir/traer.html">QUÉ TRAER</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/asistir/normas.html">NORMAS GENERALES DE PARTICIPACIÓN</a></p>
                             </div>
                         </li>
                         <li class="li_desplegable">
                             <a class="menuLinks" href="paginas/actividades/actividades.html">ACTIVIDADES PARTY</a>
                             <div class="div_desplegable">
-                                <p class="pLinks"><a class="menuLinks" href="#">CREATIVIDAD DIGITAL</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">HARDWARE</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">JUEGOS</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">SOFTWARE LIBRE</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">OTRAS ACTIVIDADES</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/actividades/creatividad.html">CREATIVIDAD DIGITAL</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/actividades/hardware.html">HARDWARE</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/actividades/juegos.html">JUEGOS</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/actividades/software.html">SOFTWARE LIBRE</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/actividades/otras.html">OTRAS ACTIVIDADES</a></p>
                             </div>
                             
                         </li>
                         <li class="li_desplegable">
                             <a class="menuLinks" href="paginas/opengune/opengune.html">OPENGUNE</a>
                             <div class="div_desplegable">
-                                <p class="pLinks"><a class="menuLinks" href="#">INFORMACIÓN</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">HORARIO</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">CONFERENCIAS</a></p>
-                                <p class="pLinks"><a class="menuLinks" href="#">TALLERES</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/opengune/opengune.html">INICIO OPENGUNE</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/opengune/horario.html">HORARIO</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/opengune/conferencias.html">CONFERENCIAS</a></p>
+                                <p class="pLinks"><a class="menuLinks" href="paginas/opengune/talleres.html">TALLERES</a></p>
                             </div>
                         </li>
                         <li class="li_desplegable">
@@ -87,7 +87,7 @@
                         <a href="www.google.es" id="linkFechas">EUSKAL ENCOUNTER <span>PRESENCIAL</span><br/> 22-25 <span class="segundaLinea">JULIO 2022</span> BEC <br/> HAZ CLICK PARA <span>REGISTRARTE</span></a>
                     </div>
                     <div id="wrapperLinkInfo">
-                        <a href="" id="masInfo">¡Reservas abiertas! Pulsa para más información</a>
+                        <a href="paginas/asistir/inscribete.html" id="masInfo">¡Reservas abiertas! Pulsa para más información</a>
                     </div>
                 </div>
             </section>
@@ -151,9 +151,15 @@
                 <div class="wrapper_inicio">
                     <h2 class="inicio_titulo">¿Qué es la Euskal Encounter?</h2>
                     <p class="texto_inicio">
-                        La Euskal Encounter es una reunión multitudinaria de aficionados y profesionales de la informática que buscan intercambiar conocimientos y realizar durante varios días todo tipo de actividades relacionadas con la informática.
+                        La <strong>Euskal Encounter</strong> es una reunión multitudinaria de aficionados y profesionales de la informática que buscan intercambiar conocimientos y realizar durante varios días todo tipo de actividades relacionadas con la informática.
                         Constituye parte de un fenómeno que tuvo su origen a finales de la década de los ochenta en el norte de Europa, en países tales como Noruega, Dinamarca o Alemania. En el 2022 la party más veterana del estado alcanzará su trigésima edición.
                     </p>
+                    <ul class="listaTextoInicio">
+                        <li>5.088 ordenadores en red.</li>
+                        <li>60 Gbps de conexión a internet.</li>
+                        <li>Más de 50.000 metros cuadrados ocupados en el Bilbao Exhibition Center <em>(BEC).</em></li>
+                        <li>4 dias de actividad.</li>
+                    </ul>
                 </div>
             </section>
             <section class="section_texto2">
@@ -188,6 +194,7 @@
             let titulo1 = document.querySelector("h2.inicio_titulo");
             let texto1 = document.querySelector("p.texto_inicio");
             let wrapper1 = document.querySelector("div.wrapper_inicio");
+            let listaTexto1 = document.querySelector("ul.listaTextoInicio");
             let titulo2 = document.querySelector("h2.inicio_titulo2");
             let texto2 = document.querySelector("p.texto_inicio2");
             let wrapper2 = document.querySelector("div.wrapper_inicio2");
@@ -199,11 +206,12 @@
                 if(scrollY >= 250 && !titulo1.classList.contains("tituloUp")){
                     titulo1.classList.add("tituloUp");
                     texto1.classList.add("texto1Up");
-                    wrapper1.classList.add("wrapperUp")
-                }else if(scrollY >= 450 && !texto2.classList.contains("texto1Up")){
+                    wrapper1.classList.add("wrapperUp");
+                    listaTexto1.classList.add("listaUp");
+                }else if(scrollY >= 500 && !texto2.classList.contains("texto1Up")){
                     titulo2.classList.add("tituloUp");
                     texto2.classList.add("texto1Up");
-                    wrapper2.classList.add("wrapperUp")
+                    wrapper2.classList.add("wrapperUp2");
                 }
             }
 		</script>
