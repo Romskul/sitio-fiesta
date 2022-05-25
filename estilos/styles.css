@@ -18,7 +18,6 @@
 
 .body {
     background: linear-gradient(180deg, rgb(4, 7, 12), black);
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,7 +366,8 @@ header.header a.login:hover {
 .wrapper_texto_secun{
     width: 75%;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 1,5em;
+    padding: 2em 5em 4em 0;
+    position: relative;
 }
 
 .titulo_secun {
@@ -398,9 +398,7 @@ header.header a.login:hover {
     align-items: center;
 }
 
-.wrapper_texto_secun{
-    padding: 2em 10em 4em 0;
-}
+
 
 section.section_info img{
     width: 50%;
@@ -960,4 +958,42 @@ h3.subtitulo_terc{
     font-size: 1.25em;
     font-family: 'latoregular';
     font-weight: 500;
+}
+/*-----------------------------FIN INSCRIBETE.HTML ----------------------------------*/
+
+/*-----------------------------OPENEGUNE.HTML ----------------------------------*/
+
+.wrapper_info_openegune {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#openeguneLogo {
+    width: 20%;
+    padding-left: 2em;
+}
+
+.link_parrafo_secun {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.link_parrafo_secun p{
+    padding: 0;
+    margin: 0;
+}
+
+.link_parrafo_secun p a {
+    margin: 0;
+    padding: 0 .5em;
+}
+
+#logoYou {
+    width: 35px;
+    padding: 0;
+    margin: 0;
 }
