@@ -335,6 +335,10 @@ header.header a.login:hover {
     top: 120px;
 }
 
+#aside_links div#linksWrapper a.subButtons {
+    margin-left: 3em;
+}
+
 #aside_links a{
     text-decoration: none;
     color: #050505;
@@ -400,7 +404,7 @@ header.header a.login:hover {
 
 
 
-section.section_info img{
+section.section_info > img{
     width: 50%;
     margin-bottom: 4em;
     border-bottom-right-radius: 15%;
@@ -595,7 +599,7 @@ div.wrapper_texto_secun ul li {
 /*///////////////////////////////// PRE-FOOTER ///////////////////////////////*/
 
 #preFooterLinksWrapper {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     margin: 2em;
@@ -996,4 +1000,125 @@ h3.subtitulo_terc{
     width: 35px;
     padding: 0;
     margin: 0;
+    
+}
+
+/*----------------------------- FIN OPENEGUNE.HTML ----------------------------------*/
+
+/*----------------------------- NOTICIAS.HTML ----------------------------------*/
+
+.wrapper_info_noticias {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.wrapper_noticias, div.wrapper_noticias2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 4em;
+}
+
+h3.subtitulo_secun_noticias{
+    font-size: 1.25em;
+    font-family: 'latoregular';
+}
+
+.parrafo_secun_noticias {
+    font-family: 'robotoregular';
+    padding: 0;
+    margin: 0;
+}
+
+.parrafo_secun_noticias a {
+    text-decoration: none;
+    color: rgb(233, 84, 13);
+    padding: 0;
+    margin: 0;
+}
+
+.parrafo_secun_noticias a:hover {
+    color: rgb(67, 116, 183);
+    text-decoration: underline;
+}
+
+p.notas {
+    padding-top: 2em;
+}
+
+p.prensa {
+    padding-bottom: 25em;
+}
+
+/*----------------------------- FIN NOTICIAS.HTML ----------------------------------*/
+
+
+
+.wrapper_logo_red {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+div.wrapper_logo_red > img{
+    width: 80px;
+}
+
+/*---------------------------------- FIN RED.HTML --------------------------------------*/
+
+/*---------------------------------- ACTIVIDADES.HTML --------------------------------------*/
+
+div.wrapper_actividades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 55vw;
+    border:solid 1px white;
+    flex-wrap: wrap;
+    gap: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+div.wrapper_actividades div.creatividad_digital, div.hardware, div.software_libre, div.juegos, div.otras_actividades, div.openegune {
+    border: solid 2px #fdf497;
+    width: 49%;
+    background-color: black;
+    
+}
+
+div.wrapper_actividades div.creatividad_digital {
+
+}
+
+div.wrapper_actividades .div.hardware{
+
+}
+
+div.wrapper_actividades div.software_libre{
+
+}
+
+div.wrapper_actividades div.juegos{
+
+}
+
+div.wrapper_actividades div.otras_actividades {
+
+}
+
+div.wrapper_actividades div.openegune{
+
+}
+
+div.wrapper_actividades div.creatividad_digital, div.hardware, div.software_libre, div.juegos, div.otras_actividades, div.openegune img{
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
