@@ -1072,53 +1072,99 @@ div.wrapper_logo_red > img{
 
 /*---------------------------------- ACTIVIDADES.HTML --------------------------------------*/
 
+h1.titulo_actividades{
+    color: white;
+    font-family: 'latoregular';
+    font-size: 2em;
+}
+
 div.wrapper_actividades {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 55vw;
-    border:solid 1px white;
-    flex-wrap: wrap;
-    gap: 1px;
-    position: relative;
+    width: 40vw;
     z-index: 2;
+    gap: 3px;
+    background-color: #050505c5;
+    padding: 1.5em 0 1.5em 0;
 }
 
+div.fila1, div.fila2, div.fila3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: wrap;
+
+
+}
 div.wrapper_actividades div.creatividad_digital, div.hardware, div.software_libre, div.juegos, div.otras_actividades, div.openegune {
-    border: solid 2px #fdf497;
-    width: 49%;
-    background-color: black;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-div.wrapper_actividades div.creatividad_digital {
-
+div.wrapper_actividades div.creatividad_digital span.tituloImagen {
+    position: absolute;
+    font-size: 1.25em;
+    font-family: 'latoregular';
+    padding: 1em .5em 1em .5em;
+    background-color: rgba(5, 5, 5, 0.5);
+    color: white;
 }
 
-div.wrapper_actividades .div.hardware{
-
+div.wrapper_actividades div.hardware span.tituloImagen{
+    position: absolute;
+    font-size: 1.25em;
+    font-family: 'latoregular';
+    padding: 1em .5em 1em .5em;
+    background-color: rgba(5, 5, 5, 0.5);
+    color: white;
 }
 
-div.wrapper_actividades div.software_libre{
-
+div.wrapper_actividades div.software_libre span.tituloImagen{
+    position: absolute;
+    font-size: 1.25em;
+    font-family: 'latoregular';
+    padding: 1em .5em 1em .5em;
+    background-color: rgba(5, 5, 5, 0.5);
+    color: white;
 }
 
-div.wrapper_actividades div.juegos{
-
+div.wrapper_actividades div.juegos span.tituloImagen{
+    position: absolute;
+    font-size: 1.25em;
+    font-family: 'latoregular';
+    padding: 1em .5em 1em .5em;
+    background-color: rgba(5, 5, 5, 0.5);
+    color: white;
 }
 
-div.wrapper_actividades div.otras_actividades {
-
+div.wrapper_actividades div.otras_actividades span.tituloImagen{
+    position: absolute;
+    font-size: 1.25em;
+    font-family: 'latoregular';
+    padding: 1em .5em 1em .5em;
+    background-color: rgba(5, 5, 5, 0.5);
+    color: white;
 }
 
-div.wrapper_actividades div.openegune{
-
+div.wrapper_actividades div.openegune span.tituloImagen{
+    position: absolute;
+    font-size: 1.25em;
+    font-family: 'latoregular';
+    padding: 1em .5em 1em .5em;
+    background-color: rgba(5, 5, 5, 0.5);
+    color: white;
 }
 
 div.wrapper_actividades div.creatividad_digital, div.hardware, div.software_libre, div.juegos, div.otras_actividades, div.openegune img{
     width: fit-content;
     padding: 0;
     margin: 0;
-    position: relative;
+   
 }
