@@ -1106,6 +1106,7 @@ div.wrapper_actividades div.creatividad_digital, div.hardware, div.software_libr
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
 }
 
 div.wrapper_actividades div.creatividad_digital span.tituloImagen {
