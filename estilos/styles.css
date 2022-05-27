@@ -842,6 +842,7 @@ div#preFooterLinksWrapper a:hover::after {
     background-color: rgba(255, 255, 246, 0.7);
     position: relative;
     transition: 1s;
+    overflow: hidden;
 }
 
 .inicio_titulo, .inicio_titulo2 {
@@ -1076,6 +1077,7 @@ h1.titulo_actividades{
     color: white;
     font-family: 'latoregular';
     font-size: 2em;
+    text-shadow: 0 0 15px rgb(67, 116, 183);
 }
 
 div.wrapper_actividades {
@@ -1084,7 +1086,7 @@ div.wrapper_actividades {
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 40vw;
+    width: 850px;
     z-index: 2;
     gap: 3px;
     background-color: #050505c5;
@@ -1107,65 +1109,41 @@ div.wrapper_actividades div.creatividad_digital, div.hardware, div.software_libr
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-div.wrapper_actividades div.creatividad_digital span.tituloImagen {
+span.tituloImagen{
     position: absolute;
     font-size: 1.25em;
     font-family: 'latoregular';
     padding: 1em .5em 1em .5em;
-    background-color: rgba(5, 5, 5, 0.5);
+    background-color: rgba(5, 5, 5, 0.7);
     color: white;
 }
 
-div.wrapper_actividades div.hardware span.tituloImagen{
+p.textoImagen {
+    width: 85%;
     position: absolute;
-    font-size: 1.25em;
+    font-size: 1em;
     font-family: 'latoregular';
     padding: 1em .5em 1em .5em;
-    background-color: rgba(5, 5, 5, 0.5);
+    background-color: rgba(5, 5, 5, 0.7);
     color: white;
+    opacity: 0;
 }
 
-div.wrapper_actividades div.software_libre span.tituloImagen{
-    position: absolute;
-    font-size: 1.25em;
-    font-family: 'latoregular';
-    padding: 1em .5em 1em .5em;
-    background-color: rgba(5, 5, 5, 0.5);
-    color: white;
-}
-
-div.wrapper_actividades div.juegos span.tituloImagen{
-    position: absolute;
-    font-size: 1.25em;
-    font-family: 'latoregular';
-    padding: 1em .5em 1em .5em;
-    background-color: rgba(5, 5, 5, 0.5);
-    color: white;
-}
-
-div.wrapper_actividades div.otras_actividades span.tituloImagen{
-    position: absolute;
-    font-size: 1.25em;
-    font-family: 'latoregular';
-    padding: 1em .5em 1em .5em;
-    background-color: rgba(5, 5, 5, 0.5);
-    color: white;
-}
-
-div.wrapper_actividades div.openegune span.tituloImagen{
-    position: absolute;
-    font-size: 1.25em;
-    font-family: 'latoregular';
-    padding: 1em .5em 1em .5em;
-    background-color: rgba(5, 5, 5, 0.5);
-    color: white;
-}
 
 div.wrapper_actividades div.creatividad_digital, div.hardware, div.software_libre, div.juegos, div.otras_actividades, div.openegune img{
     width: fit-content;
     padding: 0;
     margin: 0;
-   
+}
+
+div.wrapper_actividades div div:hover{
+    box-shadow: 0 0 25px rgb(138, 174, 225);
+}
+
+desplazaIzquierda {
+    transform: translateY(-10em);
 }
